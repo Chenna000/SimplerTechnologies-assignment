@@ -1,0 +1,188 @@
+/* index.css */
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(150deg, #7f7ffa, #f9ba63);
+  color: #333;
+}
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: transparent;
+  backdrop-filter: blur(50px);
+  border-bottom: 3px solid rgba(244, 207, 207, 0.1);
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4cafef;
+}
+
+/* Signup Page */
+.signup-form {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 0.6rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  background: #4caf50;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-form button:hover {
+  background: #43a047;
+}
+
+.error {
+  color: red;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.error button {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* User Page */
+.user-page {
+  /* margin-top: 1px; */
+  margin-left: 50px;
+}
+.user-page h1{
+  margin-left: auto;
+  padding: auto;
+  align-content: center;
+  /* background-color: red; */
+  text-align: center;
+  color: white;
+}
+
+.user-card {
+  width: 320px;
+  min-height: 260px;
+  margin-top: 2rem;
+  padding: 2.5rem 2rem;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px);
+  border-radius: 22px;
+  box-shadow: 0 10px 32px 0 rgba(122, 196, 245, 0.18), 10px 10px 8px 0 rgba(7, 146, 239, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* animation: cardEntry 0.8s cubic-bezier(0.23, 1, 0.32, 1); */
+border: 2px solid #b3c6ff;}
+
+@keyframes cardEntry {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+    box-shadow: none;
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 40px 0 rgba(76,175,239,0.18);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    box-shadow: 0 8px 32px 0 rgba(76,175,239,0.18), 0 1.5px 8px 0 rgba(76,175,239,0.08);
+  }
+}
+
+.user-card h3 {
+  margin-bottom: 0.7rem;
+  font-size: 2rem;
+  color: #2a3a5e;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(76,175,239,0.08);
+}
+
+.user-card p {
+  color: #4a5a7a;
+  font-size: 1.08rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.2px;
+}
+.usercircle{
+  width:150px;
+  height: 150px;
+  border-radius: 100%;
+  background: linear-gradient(135deg, #c0a7fa 0%, #cc9dbf 100%);
+  backdrop-filter: blur(10px);
+  border: 2px solid #e4ede5;
+  /* text-align: center; */
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6em;
+  padding-bottom: 10px;
+
+}
