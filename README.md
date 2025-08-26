@@ -8,7 +8,7 @@ A modern, responsive React user portal built with Vite. Features a beautiful ani
 - Animated user card with profile details
 - Stylish, full-width navbar
 - Modern color palette and gradients
-- Built with React, Vite, and CSS modules
+- Built with React, Vite, and CSS modules.
 
 ## Getting Started
 
